@@ -9,7 +9,8 @@ import cv2
 
 camera = cv2.VideoCapture(0)
 ret, img = camera.read()
-
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 path = "/home/pi/Desktop/opencv new/calibrationimages/"
 count = 0
